@@ -131,63 +131,54 @@ button:hover{
 	width: 1000px;
 	--aspect-ratio: 120/76;
 	--image: url(img/1.jpg);
-	border-radius: 10px;
 }
 
 .item:nth-child(2) .item__img-wrap {
 	width: 1000px;
 	--aspect-ratio: 120/76;
 	--image: url(img/2.jpg);
-	border-radius: 10px;
 }
 
 .item:nth-child(3) .item__img-wrap {
 	width: 1000px;
 	--aspect-ratio: 120/76;
 	--image: url(img/3.jpg);
-	border-radius: 10px;
 }
 
 .item:nth-child(4) .item__img-wrap {
 	width: 1000px;
 	--aspect-ratio: 120/76;
 	--image: url(img/4.jpg);
-	border-radius: 10px;
 }
 
 .item:nth-child(5) .item__img-wrap {
 	width: 1000px;
 	--aspect-ratio: 120/76;
 	--image: url(img/5.jpg);
-	border-radius: 10px;
 }
 
 .item:nth-child(6) .item__img-wrap {
 	width: 1000px;
 	--aspect-ratio: 120/76;
 	--image: url(img/6.jpg);
-	border-radius: 10px;
 }
 
 .item:nth-child(7) .item__img-wrap {
 	width: 1000px;
 	--aspect-ratio: 120/76;
 	--image: url(img/7.jpg);
-	border-radius: 10px;
 }
 
 .item:nth-child(8) .item__img-wrap {
 	width: 1000px;
 	--aspect-ratio: 120/76;
 	--image: url(img/8.jpg);
-	border-radius: 10px;
 }
 
 .item:nth-child(9) .item__img-wrap {
 	width: 1000px;
 	--aspect-ratio: 120/76;
 	--image: url(img/9.jpg);
-	border-radius: 10px;
 }
 
 .item__img {
@@ -228,7 +219,7 @@ button:hover{
 }
 
 .item__caption-copy {
-	margin: 0;
+	margin: 0 7rem 0 0;
 }
 
 .item__caption-copy::before {
