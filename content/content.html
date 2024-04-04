@@ -11,17 +11,30 @@
 		const supportsCssVars = function () {
 			let e, t = document.createElement("style");
 			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
-		};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");
+		function play(){
+			const audio = document.getElementById('audio');
+			audio.play();
+		}
+		</script>
 	</head>
 	<body class="loading">
+		<audio id="audio" autoplay="autoplay">
+			<source src="comfortably-numb.mp3" type="audio/mpeg">
+		</audio>
 		<main>
 			<div data-scroll>
 				<div class="content">
 					<div class="item">
 						<div class="item__img-wrap"><div class="item__img item__img--t1"></div></div>
 						<div class="item__caption">
-							<h2 class="item__caption-title">Central view</h2>
-							<p class="item__caption-copy">Great turbulent clouds emerged into consciousness citizens.</p>
+							<h2 class="item__caption-title">MISANTHROPE</h2>
+							<p class="item__caption-copy">Do you just hate human?
+								Madness, Lies, Egotism, Narcissism, Cowardice, Self-delusion, Cruelty.
+								Why are always trying to prove our superiority over others
+								We think we are so great as a human, but we brings nothing but destruction
+								Who do we think we are?
+								Money, Power, Sex.</p>
 						</div>
 					</div>
 					<div class="item">
