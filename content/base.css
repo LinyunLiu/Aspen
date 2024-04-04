@@ -7,17 +7,24 @@
 :root {
 	font-size: 16px;
 }
-
+@font-face {
+	font-family: 'Cassandra';
+	src: url('../fonts/Cassandra.ttf')
+}
+@font-face {
+	font-family: 'Lovya';
+	src: url('../fonts/Lovya.otf')
+}
 body {
 	margin: 0;
 	--color-text: #1c1b1b;
 	/*--color-bg: #efe6e1;*/
 	background: #222222;
-	--color-link: #b07656;
+	--color-link: floralwhite;
 	--color-link-hover: #000;
 	--color-deco: #424242;
-	color: #efe6e1;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+	color: floralwhite;
+	font-family: Futura, "futura-pt", sans-serif;
 }
 
 /* Page Loader */
@@ -71,7 +78,7 @@ a:focus {
 /*	will-change: transform;*/
 /*}*/
 button{
-	background: lightpink;
+	background: #f9dbe2;
 	border: none;
 	border-radius: 20px;
 	width: 100px;
@@ -211,15 +218,18 @@ button:hover{
 }
 
 .item__caption-title {
-	font-family: paralucent, sans-serif;
-	font-weight: 400;
+	font-family: Lovya, serif;
+	font-weight: bolder;
 	font-size: 3rem;
 	margin: 0 0 -25px 0;
-	color: lightpink;
+	color: floralwhite;
+	opacity: 80%;
 }
 
 .item__caption-copy {
 	margin: 0 7rem 0 0;
+	opacity: 80%;
+	font-weight: lighter;
 }
 
 .item__caption-copy::before {

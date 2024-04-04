@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'Cassandra';
+    src: url('../fonts/Cassandra.ttf')
+}
+@font-face {
+    font-family: 'Lovya';
+    src: url('../fonts/Lovya.otf')
+}
 body {
-    font-family: titling-gothic-fb, sans-serif;
+    font-family: Futura, "futura-pt", sans-serif;
     font-weight: 200;
     letter-spacing: 1px;
     font-size: 0.85rem;
@@ -12,8 +20,9 @@ body {
 	/*-webkit-text-fill-color: transparent;*/
 	text-fill-color: lightpink;
 	color: lightpink;
-    font-size: 8vw;
+    font-size: 10vw;
     font-weight: 800;
+    font-family: Lovya, serif;
 }
 @keyframes moveUpDown {
     0% {
@@ -31,6 +40,5 @@ img{
     width: 160px;
     align-self: center;
     opacity: 80%;
-    filter: wave(10px);
 }
 
