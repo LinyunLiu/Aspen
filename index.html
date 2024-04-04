@@ -19,57 +19,37 @@
             align-content: center;
         }
         p{
+            margin: 10px;
             color: dimgrey;
             font-family: "greycliff-cf", sans-serif;
             align-self: center;
-        }
-        div.inputs{
-            display: flex;
-            justify-content: center;
-            align-content: center;
+            font-size: 15px;
         }
         input{
             margin: 10px;
-            width: 4rem;
-            height: 4rem;
+            width: 300px;
+            height: 40px;
             border-radius: 8px;
             border: none;
-            font-size: 40px;
+            font-size: 30px;
             text-align: center;
         }
+        button{
+            margin: 10px;
+            width: 303px;
+            height: 40px;
+            border-radius: 8px;
+            border: none;
+        }
+        button:hover{
+            cursor: pointer;
+        }
         @media screen and (max-width: 60em) {
-            input{
-                width: 3rem;
-                height: 3rem;
-                font-size: 30px;
-            };
+
         }
     </style>
     <script>
-        //Jump the cursors
-        function focusNext(current, nextInputId) {
-            const maxLength = parseInt(current.getAttribute('maxlength'));
-            const inputValue = current.value;
-            if (inputValue.length >= maxLength) {
-                if (nextInputId !== "end") {
-                    const nextInput = document.getElementById(nextInputId);
-                    if (nextInput) {
-                        nextInput.focus();
-                    }
-                }
-            }
-        }
-        // Prevent non-numeric characters
-        document.querySelectorAll('input[type="text"]').forEach(function(input) {
-            input.addEventListener('keypress', function(event) {
-                if (event.key < '0' || event.key > '9') {
-                    event.preventDefault();
-                }
-            });
-        });
-
         function getInputs(){
-            let i1 = document.getElementById("i1").value
         }
         function verify(){
 
@@ -79,14 +59,8 @@
 <body>
     <main>
         <p>Enter Passcodes</p>
-        <div class="inputs">
-            <label><input type="text" id="i1" maxlength="1" min="0" max="9" oninput="focusNext(this, 'i2')"></label>
-            <label><input type="text" id="i2" maxlength="1" min="0" max="9" oninput="focusNext(this, 'i3')"></label>
-            <label><input type="text" id="i3" maxlength="1" min="0" max="9" oninput="focusNext(this, 'i4')"></label>
-            <label><input type="text" id="i4" maxlength="1" min="0" max="9" oninput="focusNext(this, 'i5')"></label>
-            <label><input type="text" id="i5" maxlength="1" min="0" max="9" oninput="focusNext(this, 'i6')"></label>
-            <label><input type="text" id="i6" maxlength="1" min="0" max="9" oninput="focusNext(this, 'end')"></label>
-        </div>
+        <label><input type="password" id="pwd"></label>
+        <button>Enter</button>
     </main>
 </body>
 </html>
