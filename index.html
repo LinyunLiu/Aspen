@@ -27,19 +27,22 @@
         }
         input{
             margin: 10px;
-            width: 300px;
+            width: 25rem;
             height: 40px;
             border-radius: 8px;
             border: none;
-            font-size: 30px;
+            font-size: 25px;
             text-align: center;
         }
         button{
             margin: 10px;
-            width: 303px;
+            width: 25.2rem;
             height: 40px;
+            font-size: 14px;
             border-radius: 8px;
             border: none;
+            background: lightcoral;
+            color: #222222;
         }
         button:hover{
             cursor: pointer;
@@ -49,8 +52,6 @@
         }
     </style>
     <script>
-        function getInputs(){
-        }
         function verify(){
 
         }
@@ -60,7 +61,7 @@
     <main>
         <p>Enter Passcodes</p>
         <label><input type="password" id="pwd"></label>
-        <button>Enter</button>
+        <button onclick="verify()">Enter</button>
     </main>
 </body>
 </html>
