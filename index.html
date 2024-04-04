@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Verification</title>
+    <style>
+        body{
+            background: #222222;
+        }
+        main{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+        p{
+            color: dimgrey;
+            font-family: "greycliff-cf", sans-serif;
+            align-self: center;
+        }
+        div.inputs{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        input{
+            margin: 10px;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 8px;
+            border: none;
+        }
+        @media screen and (max-width: 60em) {
+            input{
+                width: 3rem;
+                height: 3rem;
+            };
+        }
+    </style>
+    <script>
+        function verify(){
+
+        }
+        function getInputs(){
+            let i1 = document.getElementById("i1").value
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <p>Enter Passcodes</p>
+        <div class="inputs">
+            <label><input type="number" id="i1"></label>
+            <label><input type="number" id="i2"></label>
+            <label><input type="number" id="i3"></label>
+            <label><input type="number" id="i4"></label>
+            <label><input type="number" id="i5"></label>
+            <label><input type="number" id="i6"></label>
+        </div>
+    </main>
+</body>
+</html>
