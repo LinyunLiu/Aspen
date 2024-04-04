@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Verification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body{
             background: #222222;
@@ -33,20 +34,45 @@
             height: 4rem;
             border-radius: 8px;
             border: none;
+            font-size: 40px;
+            text-align: center;
         }
         @media screen and (max-width: 60em) {
             input{
                 width: 3rem;
                 height: 3rem;
+                font-size: 30px;
             };
         }
     </style>
     <script>
-        function verify(){
-
+        //Jump the cursors
+        function focusNext(current, nextInputId) {
+            const maxLength = parseInt(current.getAttribute('maxlength'));
+            const inputValue = current.value;
+            if (inputValue.length >= maxLength) {
+                if (nextInputId !== "end") {
+                    const nextInput = document.getElementById(nextInputId);
+                    if (nextInput) {
+                        nextInput.focus();
+                    }
+                }
+            }
         }
+        // Prevent non-numeric characters
+        document.querySelectorAll('input[type="text"]').forEach(function(input) {
+            input.addEventListener('keypress', function(event) {
+                if (event.key < '0' || event.key > '9') {
+                    event.preventDefault();
+                }
+            });
+        });
+
         function getInputs(){
             let i1 = document.getElementById("i1").value
+        }
+        function verify(){
+
         }
     </script>
 </head>
@@ -54,12 +80,12 @@
     <main>
         <p>Enter Passcodes</p>
         <div class="inputs">
-            <label><input type="number" id="i1"></label>
-            <label><input type="number" id="i2"></label>
-            <label><input type="number" id="i3"></label>
-            <label><input type="number" id="i4"></label>
-            <label><input type="number" id="i5"></label>
-            <label><input type="number" id="i6"></label>
+            <label><input type="text" id="i1" maxlength="1" min="0" max="9" oninput="focusNext(this, 'i2')"></label>
+            <label><input type="text" id="i2" maxlength="1" min="0" max="9" oninput="focusNext(this, 'i3')"></label>
+            <label><input type="text" id="i3" maxlength="1" min="0" max="9" oninput="focusNext(this, 'i4')"></label>
+            <label><input type="text" id="i4" maxlength="1" min="0" max="9" oninput="focusNext(this, 'i5')"></label>
+            <label><input type="text" id="i5" maxlength="1" min="0" max="9" oninput="focusNext(this, 'i6')"></label>
+            <label><input type="text" id="i6" maxlength="1" min="0" max="9" oninput="focusNext(this, 'end')"></label>
         </div>
     </main>
 </body>
