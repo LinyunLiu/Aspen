@@ -85,6 +85,10 @@ a:focus {
 	position: relative;
 	z-index: 1500;
 	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .frame__title {
 	font-size: inherit;
@@ -139,7 +143,7 @@ a:focus {
 .content__title {
 	font-size: 3rem;
 	font-weight: inherit;
-	margin: 0;
+	margin: 200px 0 0 0;
 	color: var(--color-title);
 }
 .content__credits {
@@ -148,6 +152,9 @@ a:focus {
 @media screen and (max-width: 60em) {
 	.content__credits {
 		margin: 20px 70px 20px 70px;
+	}
+	.content__title {
+		margin-top: 100px;
 	}
 }
 
