@@ -87,8 +87,8 @@ button{
 	color: #222222;
 	font-weight: bold;
 	position: absolute;
-	bottom: 1rem;
-	right: 1rem;
+	bottom: 2rem;
+	right: 2rem;
 }
 button:hover{
 	cursor: pointer;
@@ -244,4 +244,9 @@ button:hover{
 	font-size: 3rem;
 	margin: 0 0 1rem;
 	display: block;
+}
+p.the-end{
+	font-family: Lovya, serif ;
+	font-weight: lighter;
+	font-size: 30px;
 }
