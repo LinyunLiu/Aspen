@@ -248,5 +248,21 @@ button:hover{
 p.the-end{
 	font-family: Lovya, serif ;
 	font-weight: lighter;
-	font-size: 30px;
+	font-size: 55px;
+	margin-left: 100px;
+}
+p.wishes{
+	font-size: 15px;
+	color: floralwhite;
+	opacity: 80%;
+	font-style: italic;
+	margin-bottom:2px;
+}
+p.date{
+	font-size: 14px;
+	color: floralwhite;
+	opacity: 80%;
+	font-style: italic;
+	margin-left: 200px;
+	margin-top: 0;
 }
