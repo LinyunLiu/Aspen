@@ -78,15 +78,17 @@ a:focus {
 /*	will-change: transform;*/
 /*}*/
 button{
-	background: #f9dbe2;
+	background: lightpink;
 	border: none;
 	border-radius: 20px;
 	width: 100px;
 	height:35px;
 	font-size: 15px;
 	color: #222222;
-	margin-top: -100px;
 	font-weight: bold;
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
 }
 button:hover{
 	cursor: pointer;
@@ -99,7 +101,8 @@ button:hover{
 	position: relative;
 	align-items: center;
 	padding: 12rem 0;
-	counter-reset: figure; 
+	counter-reset: figure;
+	margin-top: -200px;
 }
 
 .item {
@@ -114,9 +117,10 @@ button:hover{
 	content: counter(figure, decimal-leading-zero);
 	position: absolute;
 	font-family: paralucent, sans-serif;
-	font-size: 10rem;
+	font-size: 4rem;
 	color: var(--color-deco);
-	bottom: calc(100% - 3rem);
+	bottom: calc(100% - 1rem);
+	margin: 1rem;
 }
 
 .item:nth-child(even)::before {
@@ -227,7 +231,7 @@ button:hover{
 }
 
 .item__caption-copy {
-	margin: 0 7rem 0 0;
+	margin: 0 8rem 0 0;
 	opacity: 80%;
 	font-weight: lighter;
 }

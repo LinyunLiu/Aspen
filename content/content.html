@@ -12,87 +12,246 @@
 			let e, t = document.createElement("style");
 			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
 		};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");
+		// let count = 0;
+		const audio = new Audio('comfortably-numb.mp3');
+		audio.load();
+		audio.loop = true;
 		function play(){
-			const audio = document.getElementById('audio');
-			audio.play();
+			if (audio.paused){
+				audio.play();
+				let button = document.getElementById('play-button')
+				button.innerHTML = "Pause"
+			}
+			else{
+				audio.pause()
+				let button = document.getElementById('play-button')
+				button.innerHTML = "Play"
+			}
 		}
 		</script>
 	</head>
 	<body class="loading">
+	<audio id="audio">
+		<source src="comfortably-numb.mp3" type="audio/mpeg">
+	</audio>
 		<main>
 			<div data-scroll>
 				<div class="content">
-<!--					<button>Play</button>-->
 					<div class="item">
 						<div class="item__img-wrap"><div class="item__img item__img--t1"></div></div>
 						<div class="item__caption">
 							<h2 class="item__caption-title">CHAOS</h2>
-							<p class="item__caption-copy">Do you just hate human?
-								Madness, Lies, Egotism, Narcissism, Cowardice, Self-delusion, Cruelty.
-								Why are always trying to prove our superiority over others
-								We think we are so great as a human, but we brings nothing but destruction
-								Who do we think we are?
-								Money, Power, Sex.</p>
+							<p class="item__caption-copy">Has the world ever known peace, or has it forever been entwined
+								in the chaos of anarchy? Can you hear it? The piercing cries of anguish echoing through the
+								ages, resonating with the heart's deepest sorrows. Each scream, a testament to the relentless
+								march of annihilation, reverberating through the fabric of existence. In this cacophony of chaos,
+								where can we seek refuge? Where can we find that fleeting moment of tranquility amidst the
+								tumultuous storm of existence?</p>
 						</div>
 					</div>
 					<div class="item">
 						<div class="item__img-wrap"><div class="item__img item__img--t2"></div></div>
 						<div class="item__caption">
 							<h2 class="item__caption-title">MISANTHROPE</h2>
-							<p class="item__caption-copy">Brain is the seed of intelligence the sky calls to us a very small stage.</p>
+							<p class="item__caption-copy">Do you my friend hates our own kind?
+								Madness, woven into our souls; Lies, whispered by our tongues;
+								Egotism, a cloak we wear; Narcissism, a mirror we gaze into;
+								Cowardice, a refuge sought; Self-delusion, our cherished illusion;
+								Cruelty, a blade wielded without remorse.
+								Why do we persist in the futile quest for superiority?
+								In our arrogance, we tear down, we rend asunder,
+								Thinking ourselves masters of creation, yet only architects of ruin.
+								Who are we to claim dominion over the realms of existence?"</p>
 						</div>
 					</div>
 					<div class="item">
 						<div class="item__img-wrap"><div class="item__img item__img--t3"></div></div>
 						<div class="item__caption">
 							<h2 class="item__caption-title">FREEDOM</h2>
-							<p class="item__caption-copy">Cosmos encyclopaedia galactica a billion trillion culture cosmic ocean.</p>
+							<p class="item__caption-copy">Are we but slaves to unseen chains?
+								Society, a master of manipulation, weaving webs of deceit,
+								Ensnaring our souls in a labyrinth of falsehoods.
+								We dwell in a chamber of illusions, where truth is a specter, and lies reign supreme.
+								In the theater of the absurd, folly dances hand in hand with hypocrisy,
+								A masquerade of intellect veiled by ignorance.
+								Our bodies roam in the open air, yet our minds are shackled,
+								Tormented by the demons of doubt and fear.
+								Are we truly liberated from the weight of judgment?
+								Do we escape the clutches of Death's relentless grasp?
+								In this vast expanse of existence, do we find freedom,
+								Or merely wander in the shadows of our own confinement?</p>
 						</div>
 					</div>
 					<div class="item">
 						<div class="item__img-wrap"><div class="item__img item__img--t1"></div></div>
 						<div class="item__caption">
 							<h2 class="item__caption-title">MISERY</h2>
-							<p class="item__caption-copy">Network of wormholes dream of the mind's eye finite but unbounded concept.</p>
+							<p class="item__caption-copy">Why do we persist in the dance of life,
+								Knowing that each step leads closer to the edge of oblivion?
+
+								Why do we cling to sorrows like a potent elixir,
+								Intoxicating our souls with its bitter sweetness?
+
+								In its absence, we feel adrift, lost in a sea of uncertainty,
+								As if the absence of pain renders life incomplete.
+
+								Yet, in the depths of our longing, we find solace,
+								For even in sorrow's embrace, we discover fragments of truth,
+								Moments of clarity amidst the chaos of existence.
+
+								Perhaps it is in the fleeting nature of life,
+								In the ephemeral beauty of its passing,
+								That we find the essence of our humanity,
+								And the courage to continue our journey,
+								Despite the inevitability of our eventual demise.</p>
 						</div>
 					</div>
 					<div class="item">
 						<div class="item__img-wrap"><div class="item__img item__img--t2"></div></div>
 						<div class="item__caption">
 							<h2 class="item__caption-title">LOVE</h2>
-							<p class="item__caption-copy">Two ghostly white figures in coveralls and helmets are softly dancing vastness.</p>
+							<p class="item__caption-copy">In this world of shadows and strife,
+								It is love that becomes our guiding light,
+								A beacon in the darkness, leading us onward.
+
+								In the gaze of another, we find solace,
+								Strength reflected in their eyes, igniting our resolve,
+								And hope blossoms like a flower in the desert.
+
+								Their beauty, a tapestry of wonder,
+								Unfolding before us, weaving meaning into our existence,
+								Each moment spent enraptured, a testament to purpose.
+
+								Love, an intangible force,
+								An unseen thread that binds us together,
+								And in its embrace, we find the promise of happiness.
+
+								Yet, it is also the wellspring of tears,
+								For with love comes vulnerability,
+								And the knowledge that every joy carries the seed of sorrow.
+
+								But still, we dare to love,
+								For it is love that makes life worth living,
+								And in its embrace, we find the courage to face the darkness,
+								And to cherish the light.</p>
 						</div>
 					</div>
 					<div class="item">
 						<div class="item__img-wrap"><div class="item__img item__img--t3"></div></div>
 						<div class="item__caption">
 							<h2 class="item__caption-title">TEARS</h2>
-							<p class="item__caption-copy">Vastness is bearable only through love invent the universe vanquish.</p>
+							<p class="item__caption-copy">Perhaps the world has yet to grasp the profound significance of tears,
+								For they are not merely droplets of saline,
+								But the silent outcry of the soul,
+								The raw expression of the heart's agony.
+
+								In their cascade, we find catharsis,
+								As the burdens of our existence are washed away,
+								And through blurred vision, we glimpse truth,
+								As if tears cleanse the lens through which we perceive the world.
+
+								Each crystal drop contains a universe of emotion,
+								A testament to our capacity for compassion,
+								For in our tears, we find the echo of shared suffering,
+								And the unspoken language of empathy.
+
+								So let the tears flow freely,
+								For they are not a sign of weakness,
+								But a testament to our humanity,
+								A reminder that even in our darkest moments,
+								We are never truly alone.</p>
 						</div>
 					</div>
 					<div class="item">
 						<div class="item__img-wrap"><div class="item__img item__img--t1"></div></div>
 						<div class="item__caption">
 							<h2 class="item__caption-title">KINDNESS</h2>
-							<p class="item__caption-copy">The only home we've ever known concept of the number one.</p>
+							<p class="item__caption-copy">Do we truly comprehend the boundless might of kindness?
+								It is more than a mere gesture; it is a force of transformation,
+								A beacon of light in the darkest of nights.
+
+								Driven by empathy, it compels us to reach out,
+								To offer solace to those who tread the same path of suffering,
+								To extend a hand to lift others from the depths of despair.
+
+								Fueled by compassion, it knows no bounds,
+								For it is the currency of the soul,
+								Enriching both the giver and the receiver in equal measure.
+
+								In its selfless embrace, we find the power to heal,
+								To mend the broken fragments of our world,
+								And to forge connections that transcend the barriers of time and space.
+
+								So let us wield the weapon of kindness,
+								With hearts open and spirits aflame,
+								For in its gentle touch lies the potential to change the course of history,
+								And to create a world where love reigns supreme.</p>
 						</div>
 					</div>
 					<div class="item">
 						<div class="item__img-wrap"><div class="item__img item__img--t3"></div></div>
 						<div class="item__caption">
 							<h2 class="item__caption-title">TIME</h2>
-							<p class="item__caption-copy">Decipherment explorations tesseract as a patch of light.</p>
+							<p class="item__caption-copy">In the grand tapestry of time, who are we?
+
+								Bound by the threads of past, present, and future,
+								We are but fleeting travelers in the cosmic symphony,
+								Dancing between the notes of life and death,
+								Caught in the endless rhythm of existence.
+
+								Are we not mere specks of stardust,
+								Particles suspended in the vast expanse of the universe?
+								Yet within us lies a spark, an essence,
+								A flame that defies the confines of space and time.
+
+								What defines us, if not the vessel we inhabit?
+								Is it the body, the skin that cloaks our being?
+								Or is it something deeper, something ineffable,
+								That transcends the limitations of our earthly form?
+
+								Perhaps it is the intangible aspects of our being,
+								The love that binds us, the dreams that inspire us,
+								The compassion that connects us to one another,
+								That truly define who we are in this vast cosmos.
+
+								For in the end, it is not our physical form that endures,
+								But the imprint we leave upon the universe,
+								The legacy of love and kindness that echoes through eternity.
+
+								So who are we, truly?
+								We are the sum of our experiences,
+								The embodiment of our hopes and fears,
+								And the manifestation of the boundless potential
+								That resides within each and every one of us.</p>
 						</div>
 					</div>
 					<div class="item">
 						<div class="item__img-wrap"><div class="item__img item__img--t2"></div></div>
 						<div class="item__caption">
 							<h2 class="item__caption-title">COURAGE</h2>
-							<p class="item__caption-copy">Astonishment muse about dispassionate extraterrestrial observer.</p>
+							<p class="item__caption-copy">Fly away, oh soul, and let the world bear witness
+								To the strength that resides within you,
+								A force as fierce as the tempest's roar,
+								Yet as gentle as the morning dew.
+
+								Turn your pain into the fuel that propels you forward,
+								Let it be the fire that ignites your spirit,
+								And transforms the darkness into radiant light.
+
+								Let your tears become pearls of compassion,
+								Each drop a testament to the depth of your empathy,
+								A reminder that even in the midst of sorrow,
+								Kindness can blossom like a flower in the desert.
+
+								So spread your wings and soar,
+								For you are more resilient than you know,
+								And in your journey, may you inspire others
+								To find their own courage and grace.</p>
 						</div>
 					</div>
 				</div>
 			</div>
+			<button onclick="play()" id="play-button">play</button>
 		</main>
 		<script src="imagesloaded.pkgd.min.js"></script>
 		<script src="demo.js"></script>
